@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
             movement2.Normalize();
             rb.velocity = movement2 * speed;
         }
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             if(cooldown <= 0)
             {
