@@ -24,8 +24,9 @@ public class Movement : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
-            if(cooldown <= 0)
+            if(cooldown <= 0 && dashing == false)
             {
+               cooldown = dashCooldown;
                StartCoroutine(Dash());
             }
         }
@@ -33,7 +34,6 @@ public class Movement : MonoBehaviour
     }
     private IEnumerator Dash()
     {
-        cooldown = dashCooldown;
         dashing = true;
         canMove = false;
         rb.velocity = new Vector2(rb.velocity.x * 2, rb.velocity.y * 2);
