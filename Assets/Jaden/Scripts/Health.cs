@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour
 {
     public float health;
-    public string lose;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +24,7 @@ public class Health : MonoBehaviour
         {
             if(name == "Player")
             {
-                SceneManager.SetActiveScene(lose.ConvertTo<Scene>());
+                SceneManager.LoadScene("Jack");
             } else
             {
                 Destroy(gameObject);

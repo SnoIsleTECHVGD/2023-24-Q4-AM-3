@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cayden/Level1.unity
     guid: e25214e1cba8bfc4ebbd75ac080292f5
+  - enabled: 1
+    path: Assets/Jack/Jack.unity
+    guid: 5e1b0f9a9557eae47ba68f0f2ec42abf
   m_configObjects: {}

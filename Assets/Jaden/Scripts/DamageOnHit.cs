@@ -5,20 +5,14 @@ using UnityEngine;
 public class DamageOnHit : MonoBehaviour
 {
     public int damage;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public GameObject ignore;
     void Update()
     {
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Entity"))
+        if (collision.gameObject.CompareTag("Entity") && collision.gameObject != ignore)
         {
             collision.gameObject.GetComponent<Health>().health -= damage;
         }
