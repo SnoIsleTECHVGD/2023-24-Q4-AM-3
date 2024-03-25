@@ -9,7 +9,8 @@ public class Enemy : MonoBehaviour
     public GameObject player, weapon;
     public float speed, attackDistance;
     Transform target;
-    public bool attacking = false; public int counter;
+    public bool attacking = false; 
+    public int counter;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,7 @@ public class Enemy : MonoBehaviour
         }
         if(attacking)
         {
-            weapon.transform.RotateAround(transform.position, Vector3.back, 500 * Time.deltaTime);
+            weapon.transform.RotateAround(transform.position, Vector3.back, 720 * Time.deltaTime);
         }
     }
     IEnumerator Attack()
@@ -46,7 +47,6 @@ public class Enemy : MonoBehaviour
         weapon.GetComponent<SpriteRenderer>().enabled = false;
         weapon.GetComponent<CapsuleCollider2D>().enabled = false;
         attacking = false;
-        weapon.transform.rotation = new Quaternion(0, 0, -90, 0);
         counter = 0;
     }
 }
