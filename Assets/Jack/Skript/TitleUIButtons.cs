@@ -9,12 +9,12 @@ public class TitleUIButtons : MonoBehaviour
     {
         if(1 == 2)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }       
     }
     public void Play()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Tutorial Level");
     }
     public void Quit()
     {
@@ -22,7 +22,7 @@ public class TitleUIButtons : MonoBehaviour
     }
     public void Credits()
     {
-        SceneManager.LoadScene("credits");
+        SceneManager.LoadScene("Credits");
     }
     public void Settings()
     {

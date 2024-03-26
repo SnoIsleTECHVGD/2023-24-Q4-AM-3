@@ -15,7 +15,7 @@ public class PauseUI : MonoBehaviour
         {
             if (GamePaused)
             {
-                Continue();
+                Resume();
             }
             else
             {
@@ -23,7 +23,7 @@ public class PauseUI : MonoBehaviour
             }
         }
     }
-    public void Continue()
+    public void Resume()
     {
         PauseMenu.SetActive(false);
         Time.timeScale = 1f;
@@ -42,5 +42,9 @@ public class PauseUI : MonoBehaviour
     public void Settings()
     {
         SceneManager.LoadScene("Settings");
+    }
+    public void Menu()
+    {
+        SceneManager.LoadScene("Title screen");
     }
 }
