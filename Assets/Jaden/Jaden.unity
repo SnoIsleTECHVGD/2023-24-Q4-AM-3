@@ -483,11 +483,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1300047252}
   - component: {fileID: 1300047251}
-  - component: {fileID: 1300047253}
   - component: {fileID: 1300047255}
   - component: {fileID: 1300047254}
   - component: {fileID: 1300047256}
   - component: {fileID: 1300047257}
+  - component: {fileID: 1300047258}
   m_Layer: 0
   m_Name: Player
   m_TagString: Entity
@@ -563,23 +563,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1300047253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300047250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78cebe441d5cdf94893fb4f3c1e59158, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  dashCooldown: 1.5
-  cooldown: 0
-  dashing: 0
-  canMove: 0
 --- !u!61 &1300047254
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -639,7 +622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42478b1989218044dad23ca4d86b7ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 100
 --- !u!114 &1300047257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,6 +638,25 @@ MonoBehaviour:
   weapon: {fileID: 234568503}
   mainCamera: {fileID: 1356123055}
   cam: {fileID: 1356123057}
+  swinging: 0
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1300047258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300047250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98bda9e37e64b9844a97fc99ee039be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  dashCooldown: 15
+  cooldown: 0
+  dashing: 0
+  canMove: 1
 --- !u!1 &1356123055
 GameObject:
   m_ObjectHideFlags: 0
