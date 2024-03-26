@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
 using static UnityEngine.GraphicsBuffer;
+using UnityEngine.AI;
 
 public class PlayerAttack : MonoBehaviour
 {
