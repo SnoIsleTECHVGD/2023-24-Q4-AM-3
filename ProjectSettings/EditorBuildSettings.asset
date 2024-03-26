@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Jack/Title screen.unity
+    guid: ba2cc55d2479ec74fab76538166325bd
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -14,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jack/Jack.unity
     guid: 5e1b0f9a9557eae47ba68f0f2ec42abf
+  - enabled: 1
+    path: Assets/Jack/Settings.unity
+    guid: b6d4dafac2cc1944cb741b871729d66a
+  - enabled: 1
+    path: Assets/Jack/Credits.unity
+    guid: a0338c22ea201344bb7eb7c0420f88b2
   m_configObjects: {}
