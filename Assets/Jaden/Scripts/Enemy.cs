@@ -7,7 +7,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public GameObject player, weapon;
-    public float speed, attackDistance;
+    public float speed, attackDistance, sightDistance;
     Transform target;
     public bool attacking = false; 
     public int counter;
@@ -22,16 +22,22 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 localPosition = target.position - transform.position;
-        localPosition = localPosition.normalized;
-        if (MathF.Abs(transform.position.x - target.position.x) <= attackDistance && MathF.Abs(transform.position.y - target.position.y) <= attackDistance)
+        float distance = Vector3.Distance(target.position, transform.position);
+            //print("Distance to other: " + distance);
+        if (MathF.Abs(distance) <= sightDistance)
         {
-            if(!attacking)
-            StartCoroutine(Attack());
-        }
-        else
-        {
-            transform.Translate(localPosition.x * Time.deltaTime * speed, localPosition.y * Time.deltaTime * speed, localPosition.z * Time.deltaTime * speed);
+            print("stupid");
+            Vector3 localPosition = target.position - transform.position;
+            localPosition = localPosition.normalized;
+            if (MathF.Abs(distance) >= attackDistance)
+            {
+                if (!attacking)
+                    StartCoroutine(Attack());
+            }
+            else
+            {
+                transform.Translate(localPosition.x * Time.deltaTime * speed, localPosition.y * Time.deltaTime * speed, localPosition.z * Time.deltaTime * speed);
+            }
         }
         if(attacking)
         {
