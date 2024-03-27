@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7860dd00a69db7c4f8a9943054afb5a0
+guid: 81c0c9b14da06074f8c8e0463bf9c0d1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,85 +131,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kate_walkcycle_2_copy_0
+      name: kate_idle_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 371.25
+        width: 260
         height: 576
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab11a40ba3010d14bb14a6d9e6400356
-      internalID: 1317045785
+      spriteID: 92fc5bd346bcfe443b917e3625983dae
+      internalID: -2082576924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_walkcycle_2_copy_1
+      name: kate_idle_1
       rect:
         serializedVersion: 2
-        x: 371
+        x: 261
         y: 0
-        width: 371.25
+        width: 270
         height: 576
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9d32048cb122b84ca00ebaed4f2cadd
-      internalID: -803590194
+      spriteID: a9ba9ff2f8998e84486e95a63018901a
+      internalID: -1729044966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_walkcycle_2_copy_2
+      name: kate_idle_2
       rect:
         serializedVersion: 2
-        x: 742
+        x: 531
         y: 0
-        width: 371.25
+        width: 261
         height: 576
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1570bd689af6c9b46bb42b35e720c61f
-      internalID: -360470124
+      spriteID: c6e991c8df7f7f04aac42e501dbdb0a7
+      internalID: 2026240810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_walkcycle_2_copy_3
+      name: kate_idle_3
       rect:
         serializedVersion: 2
-        x: 1113
+        x: 792
         y: 0
-        width: 371.25
+        width: 261
         height: 576
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f71a8802924cb9e45a8ef184cd6f2c8a
-      internalID: 1515158551
+      spriteID: ffe784043a5bb014c8b45afc389aa0a4
+      internalID: 2013408751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kate_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 0
+        width: 261
+        height: 576
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147dc10873d91264aa35851f2775eaef
+      internalID: -1211868086
       vertices: []
       indices: 
       edges: []
@@ -225,10 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kate_walkcycle_2_copy_0: 1317045785
-      kate_walkcycle_2_copy_2: -360470124
-      kate_walkcycle_2_copy_3: 1515158551
-      kate_walkcycle_2_copy_1: -803590194
+      kate_idle_0: -2082576924
+      kate_idle_1: -1729044966
+      kate_idle_2: 2026240810
+      kate_idle_5: 1274718806
+      kate_idle_4: -1211868086
+      kate_idle_3: 2013408751
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

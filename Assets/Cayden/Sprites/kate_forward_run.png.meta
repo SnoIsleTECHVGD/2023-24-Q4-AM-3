@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce00d6e4f4a2426469fad1dbe5214ece
+guid: 5326dbf48d7a18649b1c19eb1531c575
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,12 +131,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kate_walkcycle_3_copy_0
+      name: kate_forward_run_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 371.25
+        width: 382.5
         height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,19 +145,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40d8bace481a10c46acf4330edb4cdea
-      internalID: -222282624
+      spriteID: 31b904e0711629041b730e66212914ee
+      internalID: -1355121265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_walkcycle_3_copy_1
+      name: kate_forward_run_1
       rect:
         serializedVersion: 2
-        x: 371
+        x: 382
         y: 0
-        width: 371.25
+        width: 381
         height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48d29ef9287d022479132b5d50cb230d
-      internalID: -1754294384
+      spriteID: 00e7446156553e145bc2321f2ac535ed
+      internalID: 1345711782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_walkcycle_3_copy_2
+      name: kate_forward_run_2
       rect:
         serializedVersion: 2
-        x: 742
+        x: 759
         y: 0
-        width: 371.25
+        width: 356
         height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,19 +187,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e42be6c40c1e8a4ea37f73d4e78984b
-      internalID: -888149354
+      spriteID: 626b00bc41d957f4aae6d69cc529c4e9
+      internalID: 2136470884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_walkcycle_3_copy_3
+      name: kate_forward_run_3
       rect:
         serializedVersion: 2
-        x: 1113
+        x: 1119
         y: 0
-        width: 371.25
+        width: 364
         height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,8 +208,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5317906099fdf034ab36478e0fcc80df
-      internalID: 1320686714
+      spriteID: d3acfdec4b4817642835b70221f39756
+      internalID: -391378595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kate_forward_run_4
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 0
+        width: 386
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7611d3b5b58e86e4b9f641f37768d8e8
+      internalID: 1425503048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kate_forward_run_5
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 0
+        width: 382.5
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619e542b5862a034e8b7532b1e30773b
+      internalID: 941277692
       vertices: []
       indices: 
       edges: []
@@ -225,10 +267,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kate_walkcycle_3_copy_1: -1754294384
-      kate_walkcycle_3_copy_3: 1320686714
-      kate_walkcycle_3_copy_2: -888149354
-      kate_walkcycle_3_copy_0: -222282624
+      kate_forward_run_3: -391378595
+      kate_forward_run_1: 1345711782
+      kate_forward_run_4: 1425503048
+      kate_forward_run_2: 2136470884
+      kate_forward_run_5: 941277692
+      kate_forward_run_0: -1355121265
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
