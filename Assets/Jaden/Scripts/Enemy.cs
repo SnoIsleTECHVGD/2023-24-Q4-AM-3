@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -9,11 +10,13 @@ public class Enemy : MonoBehaviour
     public GameObject player, weapon;
     public float speed, attackDistance, sightDistance;
     Transform target;
+    Rigidbody2D rb2d;
     public bool attacking = false; 
     public int counter;
     // Start is called before the first frame update
     void Start()
     {
+        rb2d = GetComponent<Rigidbody2D>();
         target = player.GetComponent<Transform>();
         weapon.GetComponent<SpriteRenderer>().enabled = false;
         weapon.GetComponent<CapsuleCollider2D>().enabled = false;
@@ -23,20 +26,24 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(target.position, transform.position);
-            //print("Distance to other: " + distance);
+        //print("Distance to other: " + distance);
         if (MathF.Abs(distance) <= sightDistance)
         {
-            print("stupid");
-            Vector3 localPosition = target.position - transform.position;
-            localPosition = localPosition.normalized;
-            if (MathF.Abs(distance) >= attackDistance)
-            {
-                if (!attacking)
-                    StartCoroutine(Attack());
-            }
-            else
-            {
-                transform.Translate(localPosition.x * Time.deltaTime * speed, localPosition.y * Time.deltaTime * speed, localPosition.z * Time.deltaTime * speed);
+            if (!Physics2D.Raycast(transform.position, target.position, 3125, LayerMask.NameToLayer("Enemy")))
+            { 
+                print("stupid");
+                Vector3 localPosition = target.position - transform.position;
+                localPosition = localPosition.normalized;
+                if (MathF.Abs(distance) <= attackDistance)
+                {
+                    if (!attacking)
+                        StartCoroutine(Attack());
+                }
+                else
+                {
+                    rb2d.transform.transform.transform.transform.transform.transform.transform.transform.Translate(localPosition.x * Time.deltaTime * speed, localPosition.y * Time.deltaTime * speed, localPosition.z * Time.deltaTime * speed);
+                }
+                
             }
         }
         if(attacking)
