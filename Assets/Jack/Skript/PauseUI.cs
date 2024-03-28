@@ -37,14 +37,17 @@ public class PauseUI : MonoBehaviour
     }
     public void Quit()
     {
+        Time.timeScale = 1f;
         Application.Quit();
     }
     public void Settings()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Settings");
     }
     public void Menu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Title screen");
     }
 }

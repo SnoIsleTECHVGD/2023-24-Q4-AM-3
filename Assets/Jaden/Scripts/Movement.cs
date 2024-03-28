@@ -18,34 +18,37 @@ public class Movement : MonoBehaviour
     {
         if (canMove)
         {
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            if(!(Time.timeScale == 0f))
             {
-                GetComponent<Animator>().SetBool("IsWalking", true);
-                GetComponent<Animator>().SetInteger("Direction", 3);
+                if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+                {
+                    GetComponent<Animator>().SetBool("IsWalking", true);
+                    GetComponent<Animator>().SetInteger("Direction", 3);
+                }
+                else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+                {
+                    GetComponent<Animator>().SetBool("IsWalking", true);
+                    GetComponent<Animator>().SetInteger("Direction", 2);
+                }
+                else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+                {
+                    GetComponent<Animator>().SetBool("IsWalking", true);
+                    GetComponent<Animator>().SetInteger("Direction", 1);
+                }
+                else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+                {
+                    GetComponent<Animator>().SetBool("IsWalking", true);
+                    GetComponent<Animator>().SetInteger("Direction", 0);
+                }
+                else
+                {
+                    GetComponent<Animator>().SetBool("IsWalking", false);
+                }
+                movement2.x = Input.GetAxisRaw("Horizontal");
+                movement2.y = Input.GetAxisRaw("Vertical");
+                movement2.Normalize();
+                rb.velocity = movement2 * speed;
             }
-            else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            {
-                GetComponent<Animator>().SetBool("IsWalking", true);
-                GetComponent<Animator>().SetInteger("Direction", 2);
-            }
-            else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-            {
-                GetComponent<Animator>().SetBool("IsWalking", true);
-                GetComponent<Animator>().SetInteger("Direction", 1);
-            }
-            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            {
-                GetComponent<Animator>().SetBool("IsWalking", true);
-                GetComponent<Animator>().SetInteger("Direction", 0);
-            }
-            else
-            {
-                GetComponent<Animator>().SetBool("IsWalking", false);
-            }
-            movement2.x = Input.GetAxisRaw("Horizontal");
-            movement2.y = Input.GetAxisRaw("Vertical");
-            movement2.Normalize();
-            rb.velocity = movement2 * speed;
         }
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
