@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5326dbf48d7a18649b1c19eb1531c575
+guid: 9493274033a166749b220749e2b704e3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,133 +129,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: kate_forward_run_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 382.5
-        height: 576
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31b904e0711629041b730e66212914ee
-      internalID: -1355121265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kate_forward_run_1
-      rect:
-        serializedVersion: 2
-        x: 382
-        y: 0
-        width: 381
-        height: 576
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00e7446156553e145bc2321f2ac535ed
-      internalID: 1345711782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kate_forward_run_2
-      rect:
-        serializedVersion: 2
-        x: 759
-        y: 0
-        width: 356
-        height: 576
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 626b00bc41d957f4aae6d69cc529c4e9
-      internalID: 2136470884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kate_forward_run_3
-      rect:
-        serializedVersion: 2
-        x: 1119
-        y: 0
-        width: 364
-        height: 576
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3acfdec4b4817642835b70221f39756
-      internalID: -391378595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kate_forward_run_4
-      rect:
-        serializedVersion: 2
-        x: 1495
-        y: 0
-        width: 386
-        height: 576
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7611d3b5b58e86e4b9f641f37768d8e8
-      internalID: 1425503048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kate_forward_run_5
-      rect:
-        serializedVersion: 2
-        x: 1910
-        y: 0
-        width: 382.5
-        height: 576
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 619e542b5862a034e8b7532b1e30773b
-      internalID: 941277692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -266,13 +140,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      kate_forward_run_3: -391378595
-      kate_forward_run_1: 1345711782
-      kate_forward_run_4: 1425503048
-      kate_forward_run_2: 2136470884
-      kate_forward_run_5: 941277692
-      kate_forward_run_0: -1355121265
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
