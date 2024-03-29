@@ -29,7 +29,9 @@ public class Enemy : MonoBehaviour
         //print("Distance to other: " + distance);
         if (MathF.Abs(distance) <= sightDistance)
         {
-            if (!Physics2D.Raycast(transform.position, target.position, 3125, LayerMask.NameToLayer("Enemy")))
+            if (Physics2D.Raycast(transform.position, target.position, LayerMask.NameToLayer("Walls")))
+                Debug.Log("hi");
+            if (!Physics2D.Raycast(transform.position, target.position, 312565, LayerMask.GetMask("Walls")))
             { 
                 print("stupid");
                 Vector3 localPosition = target.position - transform.position;
