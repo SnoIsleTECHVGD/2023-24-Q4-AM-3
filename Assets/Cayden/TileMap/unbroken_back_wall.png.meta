@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 76a50aae17a3a6f4c8ec0ff55fb2a2c3
+guid: d814f0c5521b98144add100ba13e21a3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,41 +103,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: moss_1 (1)_0
+      name: unbroken_back_wall_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b668691169e56184399843becd694740
-      internalID: 117631586
+      spriteID: 8ad6df568d45e21459baf43b2ceec3d4
+      internalID: -1265557885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss_1 (1)_1
+      name: unbroken_back_wall_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce0f6922662904245ace9ea8be0471e0
-      internalID: -1638780576
+      spriteID: 78e676b787f4e4f4a907e3792c80a891
+      internalID: -434617221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss_1 (1)_2
+      name: unbroken_back_wall_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee0df3cba2e9d2647a2128298445862b
-      internalID: -1106651289
+      spriteID: 44228c1c57770694eaafc3826d899c43
+      internalID: -2039811695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss_1 (1)_3
+      name: unbroken_back_wall_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a8521cd0a1d6c940a9f120476847a77
-      internalID: -176032494
+      spriteID: 02afc805451088643a34c2ee1425de94
+      internalID: 921152986
       vertices: []
       indices: 
       edges: []
@@ -225,10 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      moss_1 (1)_2: -1106651289
-      moss_1 (1)_3: -176032494
-      moss_1 (1)_1: -1638780576
-      moss_1 (1)_0: 117631586
+      unbroken_back_wall_3: 921152986
+      unbroken_back_wall_1: -434617221
+      unbroken_back_wall_0: -1265557885
+      unbroken_back_wall_2: -2039811695
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

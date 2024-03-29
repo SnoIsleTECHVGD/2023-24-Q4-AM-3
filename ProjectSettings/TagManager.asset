@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Weapon
   - Entity
+  - Level1End
+  - TutorialEnd
   layers:
   - Default
   - TransparentFX
@@ -42,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Everything that is cool
+    uniqueID: 2120708023
     locked: 0
