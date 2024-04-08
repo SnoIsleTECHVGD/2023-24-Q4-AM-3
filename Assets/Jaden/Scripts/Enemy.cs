@@ -44,7 +44,8 @@ public class Enemy : MonoBehaviour
             {
                 newTargetPosition.y = target.position.y - 1;
             }
-            hit = Physics2D.Raycast(transform.position, newTargetPosition, Vector3.Distance(transform.position, newTargetPosition), LayerMask.GetMask("Walls"));
+            Debug.DrawLine(transform.position, target.position);
+            hit = Physics2D.Linecast(transform.position, newTargetPosition,  LayerMask.GetMask("Walls"));
             if (hit)
                 Debug.Log("hi");
             if (!hit)
