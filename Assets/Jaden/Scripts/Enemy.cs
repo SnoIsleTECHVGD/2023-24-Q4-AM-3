@@ -10,8 +10,9 @@ public class Enemy : MonoBehaviour
     public GameObject player, weapon;
     public float speed, attackDistance, sightDistance;
     Transform target;
+    Vector3 newTargetPosition;
     Rigidbody2D rb2d;
-    public bool attacking = false; 
+    public bool attacking = false, hit; 
     public int counter;
     // Start is called before the first frame update
     void Start()
@@ -29,9 +30,24 @@ public class Enemy : MonoBehaviour
         //print("Distance to other: " + distance);
         if (MathF.Abs(distance) <= sightDistance)
         {
-            if (Physics2D.Raycast(transform.position, target.position, LayerMask.NameToLayer("Walls")))
+            if(target.position.x >= 0)
+            {
+                newTargetPosition.x = target.position.x - 1;
+            } else
+            {
+                newTargetPosition.x = target.position.x - 1;
+            }
+            if(target.position.y >= 0)
+            {
+                newTargetPosition.y = target.position.y - 1;
+            } else
+            {
+                newTargetPosition.y = target.position.y - 1;
+            }
+            hit = Physics2D.Raycast(transform.position, newTargetPosition, Vector3.Distance(transform.position, newTargetPosition), LayerMask.GetMask("Walls"));
+            if (hit)
                 Debug.Log("hi");
-            if (!Physics2D.Raycast(transform.position, target.position, 312565, LayerMask.GetMask("Walls")))
+            if (!hit)
             { 
                 print("stupid");
                 Vector3 localPosition = target.position - transform.position;
