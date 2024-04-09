@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
         canMove = true;
         rb = GetComponent<Rigidbody2D>();
     }
-    void Update()
+    void FixedUpdate()
     {
         if (canMove)
         {
