@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        rb2d.velocity = Vector3.zero;
         float distance = Vector3.Distance(target.position, transform.position);
         //print("Distance to other: " + distance);
         if (MathF.Abs(distance) <= sightDistance)
