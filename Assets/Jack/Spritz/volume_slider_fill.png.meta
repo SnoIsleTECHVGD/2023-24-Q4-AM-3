@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce6cf1a2d6e416149a49293d20a7341e
+guid: 240fead9b4088ab4a8cfdc56129cc870
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,22 +131,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: volume_slider_bar_0
+      name: volume_slider_fill_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 252
-        width: 558
-        height: 90
+        x: 108
+        y: 171
+        width: 225
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70f972f56d3ed3a4bac8647e829af1b3
-      internalID: 1310518962
+      spriteID: 6970ae4e2f7d79e47965993da4e49672
+      internalID: -1160213723
       vertices: []
       indices: 
       edges: []
@@ -162,7 +162,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      volume_slider_bar_0: 1310518962
+      volume_slider_fill_0: -1160213723
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
