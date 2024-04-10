@@ -5,9 +5,35 @@ using UnityEngine.UI;
 
 public class SliderController : MonoBehaviour
 {
-    public Text valueText;
-    public void OnSliderChange(float value)
+    [SerializeField] Slider volumeSlider;
+
+    private void Start()
     {
-        valueText.text = value.ToString();
+        if (!PlayerPrefs.HasKey("musicVolume"))
+        {
+            PlayerPrefs.SetFloat("musicVolume", 1);
+            Load();
+        }
+
+        else
+        {
+            Load();
+        }
+    }
+
+    public void ChangeVolume()
+    {
+        AudioListener.volume = volumeSlider.value;
+        Save();
+    }
+
+    private void Load()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.SetFloat("musicVoume", volumeSlider.value);
     }
 }
