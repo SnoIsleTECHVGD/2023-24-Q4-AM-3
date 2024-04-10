@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Movement : MonoBehaviour
 {
-    public float speed, dashCooldown, cooldown;
+    public float speed, dashCooldown, cooldown, LastMovement = 0;
     public bool dashing;
     public bool canMove = true;
     private Vector2 movement2;
@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     }
     void FixedUpdate()
     {
+        rb.velocity = Vector2.zero;
         if (canMove)
         {
             if(!(Time.timeScale == 0f))
@@ -23,21 +24,25 @@ public class Movement : MonoBehaviour
                 {
                     GetComponent<Animator>().SetBool("IsWalking", true);
                     GetComponent<Animator>().SetInteger("Direction", 3);
+                    LastMovement = 0;
                 }
                 else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
                     GetComponent<Animator>().SetBool("IsWalking", true);
                     GetComponent<Animator>().SetInteger("Direction", 2);
+                    LastMovement = 1;
                 }
                 else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
                 {
                     GetComponent<Animator>().SetBool("IsWalking", true);
                     GetComponent<Animator>().SetInteger("Direction", 1);
+                    LastMovement = 2;
                 }
                 else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                 {
                     GetComponent<Animator>().SetBool("IsWalking", true);
                     GetComponent<Animator>().SetInteger("Direction", 0);
+                    LastMovement = 3;
                 }
                 else
                 {

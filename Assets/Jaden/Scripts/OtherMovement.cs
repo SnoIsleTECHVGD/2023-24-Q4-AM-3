@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class OtherMovement : MonoBehaviour
 {
-    public float speed, dashCooldown, cooldown;
+    public float speed, dashCooldown, cooldown, LastMovement = 0;
     public bool dashing;
     public bool canMove = true;
     private Vector2 movement2;
@@ -17,6 +17,22 @@ public class OtherMovement : MonoBehaviour
     {
         if (canMove)
         {
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                LastMovement = 0;
+            }
+            else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                LastMovement = 1;
+            }
+            else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                LastMovement = 2;
+            }
+            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                LastMovement = 3;
+            }
             movement2.x = Input.GetAxisRaw("Horizontal");
             movement2.y = Input.GetAxisRaw("Vertical");
             movement2.Normalize();
