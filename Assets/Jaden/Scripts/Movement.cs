@@ -15,7 +15,6 @@ public class Movement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        rb.velocity = Vector2.zero;
         if (canMove)
         {
             if(!(Time.timeScale == 0f))
