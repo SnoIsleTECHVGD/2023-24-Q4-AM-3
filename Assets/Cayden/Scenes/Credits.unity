@@ -157,10 +157,10 @@ RectTransform:
   m_Father: {fileID: 1613631775}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: -102.53}
-  m_SizeDelta: {x: 121.08, y: 336.93}
+  m_AnchorMin: {x: 0.4394792, y: 0}
+  m_AnchorMax: {x: 0.5708124, y: 0.62169003}
+  m_AnchoredPosition: {x: 0.55999756, y: -0.030029297}
+  m_SizeDelta: {x: 0.6899986, y: -0.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30211631
 MonoBehaviour:
@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 30211632}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 362578892}
+        m_TargetAssemblyTypeName: CreditsButtons, Assembly-CSharp
+        m_MethodName: LoadCredit3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &30211632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,17 +372,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430d46da10cee7a439ac8c870fcef8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wholeThing: {fileID: 1613631774}
-  credit1: {fileID: 1147643525}
-  credit2: {fileID: 1918898632}
-  credit3: {fileID: 1439995328}
-  credit4: {fileID: 2134600405}
-  credit5: {fileID: 1346303423}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
+  wholeThing: {fileID: 0}
+  img1: {fileID: 1147643527}
+  img2: {fileID: 1918898634}
+  img3: {fileID: 1439995330}
+  img4: {fileID: 2134600407}
+  img5: {fileID: 1346303424}
 --- !u!1 &481644697
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,10 +638,10 @@ RectTransform:
   m_Father: {fileID: 1613631775}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: -102.53}
-  m_SizeDelta: {x: 131.61, y: 336.93}
+  m_AnchorMin: {x: 0.79600006, y: 0}
+  m_AnchorMax: {x: 0.93452084, y: 0.62169003}
+  m_AnchoredPosition: {x: 0.049987793, y: -0.030029297}
+  m_SizeDelta: {x: -0.34000015, y: -0.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &821102166
 MonoBehaviour:
@@ -679,7 +686,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 821102167}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 362578892}
+        m_TargetAssemblyTypeName: CreditsButtons, Assembly-CSharp
+        m_MethodName: LoadCredit5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &821102167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,10 +999,10 @@ RectTransform:
   m_Father: {fileID: 1613631775}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -397, y: -107.805}
-  m_SizeDelta: {x: 136.87, y: 326.39}
+  m_AnchorMin: {x: 0.06747917, y: 0}
+  m_AnchorMax: {x: 0.21000001, y: 0.6032319}
+  m_AnchoredPosition: {x: -0.16992188, y: -0.7999878}
+  m_SizeDelta: {x: -0.29000092, y: -1.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563681798
 MonoBehaviour:
@@ -1028,7 +1047,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1563681799}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 362578892}
+        m_TargetAssemblyTypeName: CreditsButtons, Assembly-CSharp
+        m_MethodName: LoadCredit1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1563681799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,10 +1134,10 @@ RectTransform:
   m_Father: {fileID: 362578891}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.49993896, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1699253599
 GameObject:
@@ -1142,10 +1173,10 @@ RectTransform:
   m_Father: {fileID: 1613631775}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210, y: -102.53}
-  m_SizeDelta: {x: 131.61, y: 336.93}
+  m_AnchorMin: {x: 0.24700001, y: 0}
+  m_AnchorMax: {x: 0.39289588, y: 0.62169003}
+  m_AnchoredPosition: {x: 0.15997314, y: -0.029968262}
+  m_SizeDelta: {x: 1.4899979, y: -0.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1699253601
 MonoBehaviour:
@@ -1190,7 +1221,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1699253602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 362578892}
+        m_TargetAssemblyTypeName: CreditsButtons, Assembly-CSharp
+        m_MethodName: LoadCredit2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1699253602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,10 +1306,10 @@ RectTransform:
   m_Father: {fileID: 1613631775}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 205, y: -102.53}
-  m_SizeDelta: {x: 142.14, y: 336.93}
+  m_AnchorMin: {x: 0.60147923, y: 0}
+  m_AnchorMax: {x: 0.75100005, y: 0.62169003}
+  m_AnchoredPosition: {x: -0.27999878, y: -0.030029297}
+  m_SizeDelta: {x: 0.9000015, y: -0.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719841054
 MonoBehaviour:
@@ -1311,7 +1354,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1719841055}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 362578892}
+        m_TargetAssemblyTypeName: CreditsButtons, Assembly-CSharp
+        m_MethodName: LoadCredit4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1719841055
 MonoBehaviour:
   m_ObjectHideFlags: 0
