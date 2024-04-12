@@ -477,6 +477,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  slider: {fileID: 0}
+  isPlayer: 0
 --- !u!61 &361864181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -675,6 +677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  slider: {fileID: 0}
+  isPlayer: 0
 --- !u!114 &1300047257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,11 +691,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9fccfc57f180a4193d6b9372f23d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 234568503}
-  mainCamera: {fileID: 1356123055}
-  cam: {fileID: 1356123057}
   swinging: 0
-  rotation: {x: 0, y: 0, z: 0, w: 0}
+  attackPosition: {x: 0, y: 0, z: 0}
+  attackRadius: 2
+  damage: 5
+  maxObjectsHit: 5
+  objectsHit: []
+  selectObjectsToHit:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &1300047258
 MonoBehaviour:
   m_ObjectHideFlags: 0

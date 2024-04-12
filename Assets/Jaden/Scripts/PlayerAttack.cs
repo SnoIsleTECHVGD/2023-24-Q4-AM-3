@@ -2,71 +2,73 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public GameObject weapon;
-    public GameObject mainCamera;
-    public Camera cam;
     public bool swinging;
-    public Quaternion rotation;
     OtherMovement movement;
+    public Vector3 attackPosition;
+    public float attackRadius, damage;
+    public int maxObjectsHit = 5;
+    public Collider2D[] objectsHit;
+    public LayerMask selectObjectsToHit;
     // Start is called before the first frame update
     void Start()
     {
         movement = gameObject.GetComponent<OtherMovement>();
-        cam = mainCamera.GetComponent<Camera>();
+        objectsHit = new Collider2D[maxObjectsHit];
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         if (Input.GetMouseButton(0) && !swinging)
         {
-            /*Vector2 myPos = new(transform.position.x, transform.position.y);
-            Vector2 direction = GetMouseDirection() - myPos;
-            direction.Normalize();
-            rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
-            weapon.transform.rotation = rotation;*/
-            StartCoroutine(Swing());
-        }
-        if (swinging)
-        {
-            weapon.transform.RotateAround(transform.position, Vector3.forward, Mathf.Abs(rotation.z - weapon.transform.rotation.z));
-            weapon.transform.RotateAround(transform.position, Vector3.forward, Mathf.Abs(rotation.z - weapon.transform.rotation.z));
-        }
-    }
-    Vector2 GetMouseDirection()
-    {
-        Vector3 dir = new(Input.mousePosition.x, Input.mousePosition.y, 0);
-        dir = cam.ScreenToWorldPoint(dir);
+            if (movement.LastMovement == 0)
+            {
+                attackPosition = transform.position + new Vector3(0, .5f, 0);
+            }
+            else if (movement.LastMovement == 1)
+            {
+                attackPosition = transform.position + new Vector3(.5f, 0, 0);
+            }
+            else if (movement.LastMovement == 2)
+            {
+                attackPosition = transform.position + new Vector3(0, -.5f, 0);
+            }
+            else
+            {
+                attackPosition = transform.position + new Vector3(-.5f, 0, 0);
+            }
+            attackPosition = transform.position + new Vector3(0, 0, 0);
+            Physics2D.OverlapCircleNonAlloc(attackPosition, attackRadius, objectsHit, selectObjectsToHit);
+            StartCoroutine(swing());
 
-        return new Vector2(dir.x, dir.y);
-    }
-    IEnumerator Swing()
-    {
-        if(movement.LastMovement == 0)
-        {
-            weapon.transform.localPosition = new Vector2(.7f, 0);
-            weapon.transform.localEulerAngles = new Vector3(0,0,90);
-        } else if (movement.LastMovement == 1)
-        {
-            weapon.transform.localPosition = new Vector2(0, .7f);
-            weapon.transform.localEulerAngles = new Vector3(0, 0, 0);
-        } else if (movement.LastMovement == 2)
-        {
-            weapon.transform.localPosition = new Vector2(-.7f, 0);
-            weapon.transform.localEulerAngles = new Vector3(0, 0, -90);
-        } else
-        {
-            weapon.transform.localPosition = new Vector2(0, -.7f);
-            weapon.transform.localEulerAngles = new Vector3(0, 0, 180);
+            if (objectsHit.Length > 0)
+            {
+                foreach (Collider2D hit in objectsHit)
+                {
+                    try
+                    {
+                        if (hit.GetComponent<Health>() != null)
+                        {
+                            hit.GetComponent<Health>().health -= damage;
+                        }
+                    } catch (Exception e)
+                    {
+
+                    }
+                }
+            }
         }
+    }
+
+    public IEnumerator swing()
+    {
         swinging = true;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(.25f);
         swinging = false;
     }
-
 }
+
