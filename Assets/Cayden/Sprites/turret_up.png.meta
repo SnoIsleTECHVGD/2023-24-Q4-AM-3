@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5da818dc46962b428ddf46a1592abc5
+guid: 99706980733def54bba0ca3c415d139a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,223 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: moss_tilemap_cut_0
+      name: turret_up_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 852bdfaea926afc42a7403d19ddc192a
-      internalID: 1025035809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eda9a4c50e3bb7949857d313e06e9dd9
-      internalID: 1838127925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92aa8566b2fd0f44d9d55568b7bb47b2
-      internalID: -316472572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 273f56cf08a2cbf46b1003b14dd3ce83
-      internalID: -1290856400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64eac500c3ff18a4e8466859cf623ccf
-      internalID: 578430792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53d5f94820a6ff14f95083e55376c93c
-      internalID: -2092281635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b58e0d455c66e5846ba355ac72e7e2cf
-      internalID: 517917555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55436e8407c750b43ac8f42c99e2d85c
-      internalID: -1801078993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c5a9f02a57ff5a44889ecb54c15027c
-      internalID: -608815120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_9
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b34d39682ea58fb4bb000980ce47c7b9
-      internalID: 5170230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: moss_tilemap_cut_10
-      rect:
-        serializedVersion: 2
-        x: 32
         y: 0
-        width: 32
-        height: 32
+        width: 207.6
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f73ccb8e6127ba14493dcc9460dc3114
-      internalID: -614606153
+      spriteID: d6dad75a9070b2c4a8fef5b580aeb733
+      internalID: 1434367498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss_tilemap_cut_11
+      name: turret_up_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 207
         y: 0
-        width: 32
-        height: 32
+        width: 207.6
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2fffde336ee1694cb56d081490e49ba
-      internalID: 1269391860
+      spriteID: c7be018c43a00a94ba304d1394d4d455
+      internalID: -475266850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss_tilemap_cut_12
+      name: turret_up_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 414
         y: 0
-        width: 32
-        height: 32
+        width: 207.6
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,8 +187,260 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 937f187679db6bd4d8916d7589b1e883
-      internalID: 938906371
+      spriteID: 40726def1fa547946b798b11e3d85ea9
+      internalID: -1535246987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_3
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00ab7d4ac1d25646991d7b03dc8db39
+      internalID: -1695960843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ae6c490d8ce9543b0a0c4161886ed9
+      internalID: 1961748023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_5
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6047cd677f4214283077f90fb740df
+      internalID: -1042417279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_6
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48caa901fed6444e8b82bcb8f04e006
+      internalID: -2104314740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_7
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebfeb48ed1ddd74480355da2f25146d
+      internalID: 1852270408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_8
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c893b1294ef72c147a35d1cf4699a7d5
+      internalID: -1047167273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_9
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a284163a21b5b4ca6086471b0fc316
+      internalID: 873175233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_10
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d608bf5dd5a7449807d4da17de7305
+      internalID: 262098674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_11
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3a0352ce07c994792f4dfad3e8d4a8
+      internalID: -1449976752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_12
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580c11c2752d44d46a7e2d60a802fa4f
+      internalID: -32206126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_13
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ab28b53d4176d44874de1ce206519b
+      internalID: 1204257188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turret_up_14
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 0
+        width: 207.6
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f53c9dcd67c025458be18856dee2e18
+      internalID: -1888219655
       vertices: []
       indices: 
       edges: []
@@ -414,19 +456,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      moss_tilemap_cut_3: -1290856400
-      moss_tilemap_cut_6: 517917555
-      moss_tilemap_cut_10: -614606153
-      moss_tilemap_cut_1: 1838127925
-      moss_tilemap_cut_2: -316472572
-      moss_tilemap_cut_7: -1801078993
-      moss_tilemap_cut_8: -608815120
-      moss_tilemap_cut_11: 1269391860
-      moss_tilemap_cut_4: 578430792
-      moss_tilemap_cut_12: 938906371
-      moss_tilemap_cut_0: 1025035809
-      moss_tilemap_cut_9: 5170230
-      moss_tilemap_cut_5: -2092281635
+      turret_up_4: 1961748023
+      turret_up_7: 1852270408
+      turret_up_2: -1535246987
+      turret_up_11: -1449976752
+      turret_up_8: -1047167273
+      turret_up_13: 1204257188
+      turret_up_3: -1695960843
+      turret_up_5: -1042417279
+      turret_up_1: -475266850
+      turret_up_0: 1434367498
+      turret_up_9: 873175233
+      turret_up_12: -32206126
+      turret_up_6: -2104314740
+      turret_up_10: 262098674
+      turret_up_14: -1888219655
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
