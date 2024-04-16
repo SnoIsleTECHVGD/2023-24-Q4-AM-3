@@ -55,7 +55,7 @@ public class PlayerAttack : MonoBehaviour
                         {
                             hit.GetComponent<Health>().health -= damage;
                         }
-                    } catch (Exception e)
+                    } catch (Exception)
                     {
 
                     }

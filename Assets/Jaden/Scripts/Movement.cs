@@ -68,7 +68,7 @@ public class Movement : MonoBehaviour
         dashing = true;
         canMove = false;
         rb.velocity = new Vector2(rb.velocity.x * 2, rb.velocity.y * 2);
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSecondsRealtime(.5f);
         rb.velocity = new Vector2(rb.velocity.x / 2, rb.velocity.y / 2);
         canMove = true;
         dashing = false;
