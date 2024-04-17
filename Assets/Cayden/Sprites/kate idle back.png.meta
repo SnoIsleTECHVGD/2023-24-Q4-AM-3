@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 81c0c9b14da06074f8c8e0463bf9c0d1
+guid: 95b2e6f08f723f145adcd47c7d38306b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,28 +131,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kate_idle_0
+      name: kate idle back_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 261
         height: 576
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92fc5bd346bcfe443b917e3625983dae
-      internalID: -2082576924
+      spriteID: 7f3e60f074888404f97198482d56e12b
+      internalID: -330623435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_idle_1
+      name: kate idle back_1
       rect:
         serializedVersion: 2
         x: 261
@@ -166,17 +166,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9ba9ff2f8998e84486e95a63018901a
-      internalID: -1729044966
+      spriteID: ecb511f29d8aac64e8604602478729a1
+      internalID: -1572239619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_idle_2
+      name: kate idle back_2
       rect:
         serializedVersion: 2
-        x: 532
+        x: 522
         y: 0
         width: 261
         height: 576
@@ -187,17 +187,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6e991c8df7f7f04aac42e501dbdb0a7
-      internalID: 2026240810
+      spriteID: dac06f1bce7c8794daa333cb9a77e2a0
+      internalID: 1863113333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_idle_3
+      name: kate idle back_3
       rect:
         serializedVersion: 2
-        x: 792
+        x: 783
         y: 0
         width: 261
         height: 576
@@ -208,17 +208,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe784043a5bb014c8b45afc389aa0a4
-      internalID: 2013408751
+      spriteID: e34e06cec5047f7469ec9ee4c9e00a4e
+      internalID: 964030408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_idle_4
+      name: kate idle back_4
       rect:
         serializedVersion: 2
-        x: 1053
+        x: 1044
         y: 0
         width: 261
         height: 576
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 147dc10873d91264aa35851f2775eaef
-      internalID: -1211868086
+      spriteID: 1be93e5ea67abbf429f98782f6c484ad
+      internalID: -706330358
       vertices: []
       indices: 
       edges: []
@@ -246,12 +246,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kate_idle_0: -2082576924
-      kate_idle_1: -1729044966
-      kate_idle_2: 2026240810
-      kate_idle_5: 1274718806
-      kate_idle_4: -1211868086
-      kate_idle_3: 2013408751
+      kate idle back_2: 1863113333
+      kate idle back_3: 964030408
+      kate idle back_4: -706330358
+      kate idle back_0: -330623435
+      kate idle back_1: -1572239619
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

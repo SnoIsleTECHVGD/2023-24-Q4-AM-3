@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 81c0c9b14da06074f8c8e0463bf9c0d1
+guid: f44eef3ebff23a84686a9e8098cee6c4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,106 +131,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kate_idle_0
+      name: kate idle side_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 261
+        width: 243
         height: 576
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92fc5bd346bcfe443b917e3625983dae
-      internalID: -2082576924
+      spriteID: 70d99a2bbf647e94a99f5cc30bb225e4
+      internalID: -880573630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_idle_1
+      name: kate idle side_1
       rect:
         serializedVersion: 2
-        x: 261
+        x: 243
         y: 0
-        width: 261
+        width: 243
         height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9ba9ff2f8998e84486e95a63018901a
-      internalID: -1729044966
+      spriteID: 09f3a6ef7d15d644c97e710bbcbf696f
+      internalID: -1652229040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_idle_2
+      name: kate idle side_2
       rect:
         serializedVersion: 2
-        x: 532
+        x: 486
         y: 0
-        width: 261
+        width: 243
         height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6e991c8df7f7f04aac42e501dbdb0a7
-      internalID: 2026240810
+      spriteID: ff28db137264a0644960a583aae13c57
+      internalID: -163996870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_idle_3
+      name: kate idle side_3
       rect:
         serializedVersion: 2
-        x: 792
+        x: 729
         y: 0
-        width: 261
+        width: 243
         height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe784043a5bb014c8b45afc389aa0a4
-      internalID: 2013408751
+      spriteID: f372b9f4a1bce3346afc38acacc31611
+      internalID: 1408452445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kate_idle_4
+      name: kate idle side_4
       rect:
         serializedVersion: 2
-        x: 1053
+        x: 972
         y: 0
-        width: 261
+        width: 243
         height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 147dc10873d91264aa35851f2775eaef
-      internalID: -1211868086
+      spriteID: 154a5a12171fc884a85576c4fbbcc811
+      internalID: -172038847
       vertices: []
       indices: 
       edges: []
@@ -246,12 +246,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kate_idle_0: -2082576924
-      kate_idle_1: -1729044966
-      kate_idle_2: 2026240810
-      kate_idle_5: 1274718806
-      kate_idle_4: -1211868086
-      kate_idle_3: 2013408751
+      kate idle side_3: 1408452445
+      kate idle side_2: -163996870
+      kate idle side_0: -880573630
+      kate idle side_4: -172038847
+      kate idle side_1: -1652229040
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
