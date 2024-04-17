@@ -18,6 +18,6 @@ public class dedButtons : MonoBehaviour
     }
     public void Title()
     {
-        SceneManager.LoadScene("Settings");
+        SceneManager.LoadScene("Title Screen");
     }
 }
