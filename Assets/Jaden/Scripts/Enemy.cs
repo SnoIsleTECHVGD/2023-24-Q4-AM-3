@@ -47,11 +47,8 @@ public class Enemy : MonoBehaviour
             }
             Debug.DrawLine(transform.position, target.position);
             hit = Physics2D.Linecast(transform.position, newTargetPosition,  LayerMask.GetMask("Walls"));
-            if (hit)
-                Debug.Log("hi");
             if (!hit)
             { 
-                print("stupid");
                 Vector3 localPosition = target.position - transform.position;
                 localPosition = localPosition.normalized;
                 if (MathF.Abs(distance) <= attackDistance)
