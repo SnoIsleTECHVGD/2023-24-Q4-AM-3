@@ -14,6 +14,9 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKey(KeyCode.P))
+            transform.position = startingPos + new Vector3(4,7);
+        if (Input.GetKey(KeyCode.L))
+            transform.position = startingPos;
     }
 }

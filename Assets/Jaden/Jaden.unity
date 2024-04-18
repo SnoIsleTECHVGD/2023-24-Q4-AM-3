@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42478b1989218044dad23ca4d86b7ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 10
   slider: {fileID: 758904399}
   isPlayer: 0
 --- !u!114 &1300047257
