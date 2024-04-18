@@ -53,7 +53,7 @@ public class Movement : MonoBehaviour
                 rb.velocity = movement2 * speed;
             }
         }
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetKey(KeyCode.LeftShift))
         {
             if(cooldown <= 0 && dashing == false)
             {
