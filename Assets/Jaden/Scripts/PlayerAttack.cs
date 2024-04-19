@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public bool swinging;
-    OtherMovement movement;
+    Movement movement;
     public Vector3 attackPosition;
     public float attackRadius, damage;
     public int maxObjectsHit = 5;
@@ -15,7 +15,7 @@ public class PlayerAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        movement = gameObject.GetComponent<OtherMovement>();
+        movement = gameObject.GetComponent<Movement>();
         objectsHit = new Collider2D[maxObjectsHit];
     }
 
@@ -25,6 +25,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetMouseButton(0) && !swinging)
         {
+            GetComponent<Animator>().SetBool("IsAttacking", true);
             if (movement.LastMovement == 0)
             {
                 attackPosition = transform.position + new Vector3(0, .5f, 0);
@@ -69,6 +70,7 @@ public class PlayerAttack : MonoBehaviour
         swinging = true;
         yield return new WaitForSeconds(.25f);
         swinging = false;
+        GetComponent<Animator>().SetBool("IsAttacking", false);
     }
 }
 
