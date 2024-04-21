@@ -48,3 +48,6 @@ TagManager:
   - name: Everything that is cool
     uniqueID: 2120708023
     locked: 0
+  - name: Particles
+    uniqueID: 1336074037
+    locked: 0
