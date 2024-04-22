@@ -13,11 +13,6 @@ public class CreditsButtons : MonoBehaviour
     public GameObject img4;
     public GameObject img5;
     public GameObject backButt;
-    private bool isShown1 = false;
-    private bool isShown2 = false;
-    private bool isShown3 = false;
-    private bool isShown4 = false;
-    private bool isShown5 = false;
     public GameObject[] images;
     public void LoadCredit1()
     {
