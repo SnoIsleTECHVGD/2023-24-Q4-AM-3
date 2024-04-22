@@ -28,9 +28,15 @@ public class BulletPool : MonoBehaviour
         {
             for (int i = 0; i < bullets.Count; i++)
             {
-                if (!bullets[i].activeInHierarchy)
+                try
                 {
-                    return bullets[i];
+                    if (!bullets[i].activeInHierarchy)
+                    {
+                        return bullets[i];
+                    }
+                }catch
+                {
+
                 }
             }
         }

@@ -26,9 +26,7 @@ public class FirePattern1 : MonoBehaviour
     {
         float xPlayer = GameObject.Find("Player").transform.position.x;
         float yPlayer = GameObject.Find("Player").transform.position.y;
-        float xThis = GetComponent<Transform>().position.x;
-        float yThis = GetComponent<Transform>().position.y;
-        float angleToPlayer = 270 - (Mathf.Rad2Deg * Mathf.Atan2(yThis - yPlayer, xThis - xPlayer));
+        float angleToPlayer = 270 - (Mathf.Rad2Deg * Mathf.Atan2(transform.position.y - yPlayer, transform.position.x - xPlayer));
         startAngle = angleToPlayer - 20f;
         endAngle = angleToPlayer + 20f;
     }
@@ -46,13 +44,12 @@ public class FirePattern1 : MonoBehaviour
                     float bulDirX = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180f);
                     float bulDirY = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180f);
 
-                    Vector3 bulMoveVector = new Vector3(bulDirX, bulDirY, 0f);
+                    Vector3 bulMoveVector = new(bulDirX, bulDirY, 0f);
                     Vector2 bulDir = (bulMoveVector - transform.position).normalized;
 
                     GameObject bul = BulletPool.bulletPoolInstance.GetBullet();
-                    bul.transform.position = transform.position;
-                    bul.transform.rotation = transform.rotation;
-                    bul.SetActive(true);
+                    bul.transform.SetPositionAndRotation(transform.position, transform.rotation);
+                bul.SetActive(true);
                     bul.GetComponent<Bullet>().SetMoveDirection(bulDir);
 
                     angle += angleStep;
