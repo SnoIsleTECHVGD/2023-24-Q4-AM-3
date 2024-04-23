@@ -65,7 +65,7 @@ public class Enemy : MonoBehaviour
         }
         if(attacking)
         {
-            weapon.transform.RotateAround(transform.position, Vector3.back, 720 * Time.deltaTime);
+            weapon.transform.RotateAround(transform.position, Vector3.back, -720 * Time.deltaTime);
         }
     }
     IEnumerator Attack()

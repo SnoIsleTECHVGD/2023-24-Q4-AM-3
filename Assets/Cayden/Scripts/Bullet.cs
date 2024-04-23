@@ -6,7 +6,6 @@ public class Bullet : MonoBehaviour
 {
     private Vector2 moveDirection;
     private float moveSpeed;
-
     private void OnEnable()
     {
         Destroy(gameObject, 3);
@@ -31,5 +30,16 @@ public class Bullet : MonoBehaviour
     private void OnDisable()
     {
         CancelInvoke();
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Entity"))
+        {
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.CompareTag("Walls")) 
+        {
+            Destroy(gameObject);
+        }
     }
 }
