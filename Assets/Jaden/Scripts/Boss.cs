@@ -7,14 +7,14 @@ public class Boss : MonoBehaviour
 {
     [SerializeField] private List<Vector3> randomPos;
     private Vector3 startingPos;
+    private string somethingfunny;
     // Start is called before the first frame update
     void Start()
     {
+        somethingfunny = somethingfunny + "";
         startingPos = transform.position;
-        randomPos.Add(startingPos + new Vector3(4, 7));
-        randomPos.Add(startingPos + new Vector3(-5, 8));
-        randomPos.Add(startingPos + new Vector3(-3, -6));
-        randomPos.Add(startingPos + new Vector3(4, -6));
+        randomPos.AddRange(new List<Vector3>() { startingPos + new Vector3(4, 7), startingPos + new Vector3(-5, 8),
+        startingPos + new Vector3(-3, -6), startingPos + new Vector3(4, -6)});
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class Boss : MonoBehaviour
     }
     public void randomizePoz()
     {
-        //transform.position = Random.Range(0, randomPos.ToArray().Length);
+        //transform.position = Random.Range(0, randomPos.Count + 1);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
