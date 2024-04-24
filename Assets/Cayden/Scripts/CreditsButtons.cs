@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CreditsButtons : MonoBehaviour
 {
@@ -13,32 +14,37 @@ public class CreditsButtons : MonoBehaviour
     public GameObject img4;
     public GameObject img5;
     public GameObject backButt;
+    public GameObject quitButt;
     public GameObject[] images;
     public void LoadCredit1()
     {
         StartCoroutine(FadeImage(false, img1));
         StartCoroutine(FadeImage(false, backButt));
+        StartCoroutine(FadeImage(true, quitButt));
     }
     public void LoadCredit2()
     {
         StartCoroutine(FadeImage(false, img2));
         StartCoroutine(FadeImage(false, backButt));
-        
+        StartCoroutine(FadeImage(true, quitButt));
     }
     public void LoadCredit3()
     {
         StartCoroutine(FadeImage(false, img3));
         StartCoroutine(FadeImage(false, backButt));
+        StartCoroutine(FadeImage(true, quitButt));
     }
     public void LoadCredit4()
     {
         StartCoroutine(FadeImage(false, img4));
         StartCoroutine(FadeImage(false, backButt));
+        StartCoroutine(FadeImage(true, quitButt));
     }
     public void LoadCredit5()
     {
         StartCoroutine(FadeImage(false, img5));
         StartCoroutine(FadeImage(false, backButt));
+        StartCoroutine(FadeImage(true, quitButt));
     }
     public void Back()
     {
@@ -51,6 +57,7 @@ public class CreditsButtons : MonoBehaviour
             {
                 StartCoroutine(FadeImage(true, image));
                 StartCoroutine(FadeImage(true, backButt));
+                StartCoroutine(FadeImage(false, quitButt));
             }
         }
     }
@@ -68,14 +75,12 @@ public class CreditsButtons : MonoBehaviour
                 yield return null;
             }
             img.SetActive(false);
-            backButt.SetActive(false);
         }
         // fade from transparent to opaque
         else
         {
 
             img.SetActive(true);
-            backButt.SetActive(true);
             // loop over 1 second
             for (float i = 0; i <= 1; i += Time.deltaTime)
             {
@@ -84,5 +89,10 @@ public class CreditsButtons : MonoBehaviour
                 yield return null;
             }
         }
+    }
+
+    public void Quit()
+    {
+        SceneManager.LoadScene("Title Screen");
     }
 }

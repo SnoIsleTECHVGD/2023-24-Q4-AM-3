@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02fa509aff517db4e82f50ef2e1c82fb
+guid: 47627065e16cb4f43b995bd8d8e9e06a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -129,7 +129,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: upscaled_mossy_crate_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 320
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6942c1395a1cb2f4395f9ea8dca0772b
+      internalID: 64991281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -140,7 +161,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      upscaled_mossy_crate_0: 64991281
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
