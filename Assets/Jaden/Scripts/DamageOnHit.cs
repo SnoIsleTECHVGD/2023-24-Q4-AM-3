@@ -11,6 +11,19 @@ public class DamageOnHit : MonoBehaviour
         if (collision.gameObject.CompareTag("Entity") && collision.gameObject.layer != ignore)
         {
             collision.gameObject.GetComponent<Health>().health -= damage;
+            //StartCoroutine(InvincibilityFrames);
         }
+    }
+
+    private IEnumerator InvincibilityFrames()
+    {
+        yield return new WaitForSecondsRealtime(0.1f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(100, 0, 0);
+        yield return new WaitForSecondsRealtime(0.1f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
+        yield return new WaitForSecondsRealtime(0.1f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(100, 0, 0);
+        yield return new WaitForSecondsRealtime(0.1f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
     }
 }
