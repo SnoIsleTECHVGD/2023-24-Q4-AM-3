@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class Boss : MonoBehaviour
@@ -14,16 +12,12 @@ public class Boss : MonoBehaviour
         somethingfunny = somethingfunny + "";
         startingPos = transform.position;
         randomPos.AddRange(new List<Vector3>() { startingPos + new Vector3(4, 7), startingPos + new Vector3(-5, 8),
-        startingPos + new Vector3(-3, -6), startingPos + new Vector3(4, -6)});
+        startingPos + new Vector3(-3, -6), startingPos + new Vector3(4, -6), startingPos});
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(GetComponent<Health>().health == 2)
-        {
-
-        }
         if(Input.GetKey(KeyCode.P))
             transform.position = startingPos + new Vector3(4,7);
         if (Input.GetKey(KeyCode.LeftBracket))
@@ -35,15 +29,16 @@ public class Boss : MonoBehaviour
         if (Input.GetKey(KeyCode.L))
             transform.position = startingPos;
     }
-    public void randomizePoz()
+    public void RandomizePos()
     {
-        //transform.position = Random.Range(0, randomPos.Count + 1);
+        int g = Random.Range(0, 5);
+        transform.position = randomPos[g];
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.GetComponent<DamageOnHit>() != null)
         {
-            randomizePoz();
+            RandomizePos();
         }
     }
 }

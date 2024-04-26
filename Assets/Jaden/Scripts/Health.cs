@@ -8,15 +8,18 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     public float health;
-    public Slider slider;
-    public bool isPlayer;
+    public GameObject sliderGameObject;
+    public bool hasSlider;
+    private Slider slider;
     private void Start()
     {
-        if (slider == null)
-            isPlayer = false;
+        
+        if (sliderGameObject == null)
+            hasSlider = false;
         else
         {
-            isPlayer = true;
+            slider = sliderGameObject.GetComponent<Slider>();
+            hasSlider = true;
             slider.maxValue = health;
             slider.value = health;
         }
@@ -24,7 +27,7 @@ public class Health : MonoBehaviour
     void Update()
     {
         CheckDie();
-        if (isPlayer)
+        if (hasSlider)
             slider.value = health;
 
     }
@@ -37,6 +40,8 @@ public class Health : MonoBehaviour
                 SceneManager.LoadScene("Ded");
             } else
             {
+                if (hasSlider)
+                    Destroy(sliderGameObject);
                 Destroy(gameObject);
             }
         }

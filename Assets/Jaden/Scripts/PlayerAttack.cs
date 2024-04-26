@@ -43,7 +43,7 @@ public class PlayerAttack : MonoBehaviour
                 attackPosition = transform.position + new Vector3(-.5f, 0, 0);
             }
             attackPosition = transform.position + new Vector3(0, 0, 0);
-            Physics2D.OverlapCircleNonAlloc(attackPosition, attackRadius, objectsHit, selectObjectsToHit);
+            Physics2D.OverlapCircleNonAlloc(attackPosition, attackRadius, objectsHit = new Collider2D[maxObjectsHit], selectObjectsToHit);
             StartCoroutine(swing());
 
             if (objectsHit.Length > 0)
@@ -53,14 +53,17 @@ public class PlayerAttack : MonoBehaviour
                     try
                     {
                         if (hit.GetComponent<Health>() != null)
-                        {
+                        { 
                             hit.GetComponent<Health>().health -= damage;
+                            if (hit.GetComponent<Boss>() != null )
+                                hit.GetComponent<Boss>().RandomizePos();
                         }
                     } catch (Exception)
                     {
 
                     }
                 }
+                
             }
         }
     }
