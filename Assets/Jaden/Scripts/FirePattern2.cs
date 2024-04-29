@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FirePattern1 : MonoBehaviour
+public class FirePattern2 : MonoBehaviour
 {
     [SerializeField]
     private int bulletsAmount = 10;

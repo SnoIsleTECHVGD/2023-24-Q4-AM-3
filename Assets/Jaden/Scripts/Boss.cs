@@ -9,7 +9,7 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        somethingfunny = somethingfunny + "";
+        somethingfunny += "";
         startingPos = transform.position;
         randomPos.AddRange(new List<Vector3>() { startingPos + new Vector3(4, 7), startingPos + new Vector3(-5, 8),
         startingPos + new Vector3(-3, -6), startingPos + new Vector3(4, -6), startingPos});
