@@ -65,6 +65,7 @@ public class Movement : MonoBehaviour
     }
     private IEnumerator Dash()
     {
+        GetComponent<Animator>().SetBool("IsDashing", true);
         dashing = true;
         canMove = false;
         rb.velocity = new Vector2(rb.velocity.x * 2, rb.velocity.y * 2);
@@ -72,5 +73,6 @@ public class Movement : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x / 2, rb.velocity.y / 2);
         canMove = true;
         dashing = false;
+        GetComponent<Animator>().SetBool("IsDashing", false);
     }
 }
