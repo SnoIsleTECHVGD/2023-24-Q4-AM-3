@@ -19106,7 +19106,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 634ebe90f25198743811cf5e13bd8d86, type: 2}
+  - {fileID: 2100000, guid: 1888f32a96b34ce4199ac3ceb1e0f14e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31841,6 +31841,34 @@ PrefabInstance:
       propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 763331417}
+    - target: {fileID: 909415975604912385, guid: 20779a5ac3b828f488ec3bb2504a7808, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 909415975604912385, guid: 20779a5ac3b828f488ec3bb2504a7808, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 909415975604912385, guid: 20779a5ac3b828f488ec3bb2504a7808, type: 3}
+      propertyPath: m_LightOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909415975604912385, guid: 20779a5ac3b828f488ec3bb2504a7808, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 909415975604912385, guid: 20779a5ac3b828f488ec3bb2504a7808, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[1]
+      value: 1336074037
+      objectReference: {fileID: 0}
+    - target: {fileID: 909415975604912385, guid: 20779a5ac3b828f488ec3bb2504a7808, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[2]
+      value: 2120708023
+      objectReference: {fileID: 0}
+    - target: {fileID: 909415975604912386, guid: 20779a5ac3b828f488ec3bb2504a7808, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 20779a5ac3b828f488ec3bb2504a7808, type: 3}
