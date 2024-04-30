@@ -8,6 +8,7 @@ TagManager:
   - Entity
   - Level1End
   - TutorialEnd
+  - Walls
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Floor
+    uniqueID: 2622889887
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

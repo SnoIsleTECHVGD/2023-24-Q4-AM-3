@@ -15,6 +15,7 @@ public class FirePattern1 : MonoBehaviour
     public float sightDistance;
     public GameObject player;
     Transform target;
+    public int stinky = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,14 @@ public class FirePattern1 : MonoBehaviour
         float distance = Vector3.Distance(target.position, transform.position);
         if (MathF.Abs(distance) <= sightDistance)
         {
+            GetComponent<Animator>().SetBool("SeesPlayer", true);
+            if (stinky < 1)
+            {
+                stinky++;
+            }
+            else
+            {
+                GetComponent<Animator>().SetBool("IsShooting", true);
                 float angleStep = (endAngle - startAngle) / bulletsAmount;
                 float angle = startAngle;
 
@@ -54,7 +63,13 @@ public class FirePattern1 : MonoBehaviour
 
                     angle += angleStep;
                 }
-
+            }
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("SeesPlayer", false);
+            GetComponent<Animator>().SetBool("IsShooting", false);
+            stinky = 0;
         }
     }
 }
