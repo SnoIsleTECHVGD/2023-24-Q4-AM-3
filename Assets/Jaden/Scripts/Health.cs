@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Health : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class Health : MonoBehaviour
     public GameObject sliderGameObject;
     public bool hasSlider;
     private Slider slider;
+    public Animator animator;
+    public AnimationClip clip;
+    public GameObject weapon;
     private void Start()
     {
         
@@ -26,12 +30,12 @@ public class Health : MonoBehaviour
     }
     void Update()
     {
-        CheckDie();
+        StartCoroutine(CheckDie());
         if (hasSlider)
             slider.value = health;
 
     }
-    void CheckDie()
+    IEnumerator CheckDie()
     {
         if(health <= 0)
         {
@@ -42,6 +46,9 @@ public class Health : MonoBehaviour
             {
                 if (hasSlider)
                     Destroy(sliderGameObject);
+                animator.SetBool("IsDead", true);
+                Destroy(weapon);
+                yield return new WaitForSeconds(clip.length);
                 Destroy(gameObject);
             }
         }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class FirePattern1 : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class FirePattern1 : MonoBehaviour
             else
             {
                 GetComponent<Animator>().SetBool("IsShooting", true);
+                GetComponent<Light2D>().color = new Color(1,0,0,1);
                 float angleStep = (endAngle - startAngle) / bulletsAmount;
                 float angle = startAngle;
 

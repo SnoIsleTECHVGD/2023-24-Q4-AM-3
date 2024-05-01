@@ -34,17 +34,11 @@ public class Enemy : MonoBehaviour
             if(target.position.x >= 0)
             {
                 newTargetPosition.x = target.position.x - 1;
-            } else
-            {
-                newTargetPosition.x = target.position.x - 1;
-            }
+            } 
             if(target.position.y >= 0)
             {
                 newTargetPosition.y = target.position.y - 1;
-            } else
-            {
-                newTargetPosition.y = target.position.y - 1;
-            }
+            } 
             Debug.DrawLine(transform.position, target.position);
             hit = Physics2D.Linecast(transform.position, newTargetPosition,  LayerMask.GetMask("Walls"));
             if (!hit)
@@ -66,6 +60,7 @@ public class Enemy : MonoBehaviour
         if(attacking)
         {
             weapon.transform.RotateAround(transform.position, Vector3.back, -720 * Time.deltaTime);
+            weapon.transform.RotateAround(transform.position, Vector3.back, 360);
         }
     }
     IEnumerator Attack()

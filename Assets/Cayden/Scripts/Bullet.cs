@@ -33,11 +33,11 @@ public class Bullet : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Entity"))
+        if (collision.gameObject.CompareTag("Turret") || collision.gameObject.CompareTag("Bullet"))
         {
-            Destroy(gameObject);
+            //heheheha
         }
-        if (collision.gameObject.CompareTag("Walls")) 
+        else
         {
             Destroy(gameObject);
         }
