@@ -49,27 +49,26 @@ public class Enemy : MonoBehaviour
                 {
                     if (!attacking)
                         StartCoroutine(Attack());
+                        GetComponent<Animator>().SetBool("IsAttacking", true);  
                 }
                 else
                 {
                     rb2d.transform.transform.transform.transform.transform.transform.transform.transform.Translate(localPosition.x * Time.deltaTime * speed, localPosition.y * Time.deltaTime * speed, localPosition.z * Time.deltaTime * speed);
+                    GetComponent<Animator>().SetBool("IsAttacking", false);
                 }
                 
             }
         }
         if(attacking)
         {
-            weapon.transform.RotateAround(transform.position, Vector3.back, -720 * Time.deltaTime);
-            weapon.transform.RotateAround(transform.position, Vector3.back, 360);
+            weapon.transform.RotateAround(transform.position, Vector3.back, -530 * Time.deltaTime);
         }
     }
     IEnumerator Attack()
     {
         attacking = true;
-        weapon.GetComponent<SpriteRenderer>().enabled = true;
         weapon.GetComponent<CapsuleCollider2D>().enabled = true;
         yield return new WaitForSeconds(1);
-        weapon.GetComponent<SpriteRenderer>().enabled = false;
         weapon.GetComponent<CapsuleCollider2D>().enabled = false;
         attacking = false;
         counter = 0;

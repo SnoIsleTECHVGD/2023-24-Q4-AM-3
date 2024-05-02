@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9437a5f80c8658044975c6bbbf6a6f01
+guid: 7624c87b4dfd93247940f22bf3236156
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,106 +131,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blobby idle and move_0
+      name: Sprite-0002_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 240
         y: 0
-        width: 245
-        height: 307
+        width: 810
+        height: 1030
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e190df782465a894e93de88f692b1bed
-      internalID: 731793908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blobby idle and move_1
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 0
-        width: 245
-        height: 307
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c81cf19300d011c49a7e156106049e9c
-      internalID: 1929218785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blobby idle and move_2
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 0
-        width: 245
-        height: 307
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9378f24ebe391cc4ba3d2b82b4a3796c
-      internalID: 1274702898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blobby idle and move_3
-      rect:
-        serializedVersion: 2
-        x: 732
-        y: 0
-        width: 245
-        height: 307
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa7795d78e2b6a2428e0c7a6370fbbfb
-      internalID: 1467859290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blobby idle and move_4
-      rect:
-        serializedVersion: 2
-        x: 976
-        y: 0
-        width: 245
-        height: 307
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ce50089ebf22f34c84b54d6526fa37c
-      internalID: 734197762
+      spriteID: 4e019614072a6bf469904e29b8ab0cb8
+      internalID: -437052783
       vertices: []
       indices: 
       edges: []
@@ -246,11 +162,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      blobby idle and move_4: 734197762
-      blobby idle and move_3: 1467859290
-      blobby idle and move_2: 1274702898
-      blobby idle and move_0: 731793908
-      blobby idle and move_1: 1929218785
+      Sprite-0002_0: -437052783
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
