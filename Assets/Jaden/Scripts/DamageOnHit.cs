@@ -21,13 +21,13 @@ public class DamageOnHit : MonoBehaviour
     private IEnumerator InvincibilityFrames(GameObject player)
     {
         player.GetComponent<Health>().isImmune = true;
-        yield return new WaitForSecondsRealtime(0.1f);
+        yield return new WaitForSeconds(0.1f);
         gameObject.GetComponent<SpriteRenderer>().color = new Color(100, 0, 0);
-        yield return new WaitForSecondsRealtime(0.1f);
+        yield return new WaitForSeconds(0.1f);
         gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
-        yield return new WaitForSecondsRealtime(0.1f);
+        yield return new WaitForSeconds(0.1f);
         gameObject.GetComponent<SpriteRenderer>().color = new Color(100, 0, 0);
-        yield return new WaitForSecondsRealtime(0.1f);
+        yield return new WaitForSeconds(0.1f);
         gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
         player.GetComponent<Health>().isImmune = false;
     }
