@@ -244,6 +244,7 @@ MonoBehaviour:
   ignore:
     serializedVersion: 2
     m_Bits: 256
+  clip: {fileID: 7400000, guid: 8a71b6d4bf53b724586950d418e278e5, type: 2}
 --- !u!50 &1837031507502155687
 Rigidbody2D:
   serializedVersion: 4

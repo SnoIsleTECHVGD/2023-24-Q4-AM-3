@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,6 +15,7 @@ public class Health : MonoBehaviour
     private Slider slider;
     public Animator animator;
     public AnimationClip clip;
+    public AnimationClip clip2;
     public GameObject weapon;
     private void Start()
     {
@@ -52,5 +54,14 @@ public class Health : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+    public void RevokeInvincibilityFrames()
+    {
+        GetComponent<Animator>().SetBool("IsInvincible", false);
+        GetComponent<Health>().isImmune = false;
+    }
+    public void RevokeAfterDelay()
+    {
+        Invoke(nameof(RevokeInvincibilityFrames), clip2.length);
     }
 }

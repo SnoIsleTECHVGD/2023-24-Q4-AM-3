@@ -6,29 +6,20 @@ public class DamageOnHit : MonoBehaviour
 {
     public int damage;
     public LayerMask ignore;
+    private GameObject player;
+    public AnimationClip clip;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Entity") && collision.gameObject.layer != ignore )
         {
             if(collision.gameObject.GetComponent<Health>().isImmune == false ) 
             {
+                player = collision.gameObject;
                 collision.gameObject.GetComponent<Health>().health -= damage;
-                StartCoroutine(InvincibilityFrames(collision.gameObject));
+                collision.gameObject.GetComponent<Health>().isImmune = true;
+                collision.gameObject.GetComponent<Animator>().SetBool("IsInvincible", true);
+                player.GetComponent<Health>().RevokeAfterDelay();
             }
         }
-    }
-
-    private IEnumerator InvincibilityFrames(GameObject player)
-    {
-        player.GetComponent<Health>().isImmune = true;
-        yield return new WaitForSeconds(0.1f);
-        gameObject.GetComponent<SpriteRenderer>().color = new Color(100, 0, 0);
-        yield return new WaitForSeconds(0.1f);
-        gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
-        yield return new WaitForSeconds(0.1f);
-        gameObject.GetComponent<SpriteRenderer>().color = new Color(100, 0, 0);
-        yield return new WaitForSeconds(0.1f);
-        gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
-        player.GetComponent<Health>().isImmune = false;
     }
 }
