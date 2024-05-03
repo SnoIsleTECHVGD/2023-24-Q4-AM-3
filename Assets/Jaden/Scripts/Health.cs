@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
 {
     public float health;
     public GameObject sliderGameObject;
-    public bool hasSlider;
+    public bool hasSlider, isImmune;
     private Slider slider;
     public Animator animator;
     public AnimationClip clip;

@@ -19,29 +19,29 @@ public class Movement : MonoBehaviour
         {
             if(!(Time.timeScale == 0f))
             {
-                if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-                {
-                    GetComponent<Animator>().SetBool("IsWalking", true);
-                    GetComponent<Animator>().SetInteger("Direction", 3);
-                    LastMovement = 0;
-                }
-                else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
                     GetComponent<Animator>().SetBool("IsWalking", true);
                     GetComponent<Animator>().SetInteger("Direction", 2);
                     LastMovement = 1;
-                }
-                else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-                {
-                    GetComponent<Animator>().SetBool("IsWalking", true);
-                    GetComponent<Animator>().SetInteger("Direction", 1);
-                    LastMovement = 2;
                 }
                 else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                 {
                     GetComponent<Animator>().SetBool("IsWalking", true);
                     GetComponent<Animator>().SetInteger("Direction", 0);
                     LastMovement = 3;
+                }
+                else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+                {
+                    GetComponent<Animator>().SetBool("IsWalking", true);
+                    GetComponent<Animator>().SetInteger("Direction", 3);
+                    LastMovement = 0;
+                }
+                else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+                {
+                    GetComponent<Animator>().SetBool("IsWalking", true);
+                    GetComponent<Animator>().SetInteger("Direction", 1);
+                    LastMovement = 2;
                 }
                 else
                 {
