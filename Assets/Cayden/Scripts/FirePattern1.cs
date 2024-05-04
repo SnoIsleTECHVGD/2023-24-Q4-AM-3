@@ -11,8 +11,6 @@ public class FirePattern1 : MonoBehaviour
 
     [SerializeField]
     private float startAngle = 160f, endAngle = 200f;
-    private float distance;
-    private Vector2 bulletMoveDirection;
     public float sightDistance;
     public GameObject player;
     Transform target;
