@@ -368,6 +368,7 @@ MonoBehaviour:
   ignore:
     serializedVersion: 2
     m_Bits: 0
+  clip: {fileID: 0}
 --- !u!1 &68145746
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +597,7 @@ MonoBehaviour:
   ignore:
     serializedVersion: 2
     m_Bits: 0
+  clip: {fileID: 0}
 --- !u!70 &234568506
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -899,6 +901,11 @@ MonoBehaviour:
   health: 10
   sliderGameObject: {fileID: 0}
   hasSlider: 0
+  isImmune: 0
+  animator: {fileID: 0}
+  clip: {fileID: 0}
+  clip2: {fileID: 0}
+  weapon: {fileID: 0}
 --- !u!61 &361864181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1674,6 +1681,11 @@ MonoBehaviour:
   health: 10
   sliderGameObject: {fileID: 0}
   hasSlider: 0
+  isImmune: 0
+  animator: {fileID: 0}
+  clip: {fileID: 0}
+  clip2: {fileID: 0}
+  weapon: {fileID: 0}
 --- !u!114 &1300047257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2198,6 +2210,11 @@ MonoBehaviour:
   health: 100
   sliderGameObject: {fileID: 327075}
   hasSlider: 1
+  isImmune: 0
+  animator: {fileID: 0}
+  clip: {fileID: 0}
+  clip2: {fileID: 0}
+  weapon: {fileID: 0}
 --- !u!212 &1488321856
 SpriteRenderer:
   m_ObjectHideFlags: 0
