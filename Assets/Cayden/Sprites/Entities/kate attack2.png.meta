@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2f5dc79c597ec7f4aab252a89c4aaac0
+guid: 0c0d29655c7816748b8630b01d46b453
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,64 +131,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sideways slash_0
+      name: kate attack2_0
       rect:
         serializedVersion: 2
-        x: 189
+        x: 0
         y: 0
-        width: 342
-        height: 711
-      alignment: 9
-      pivot: {x: 0.58923125, y: 0.39395905}
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fccefc7357f471f4bae9d97ba81848c1
-      internalID: 498501723
+      spriteID: ce54544674141624eac393bcb03cc415
+      internalID: 1801885334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sideways slash_1
+      name: kate attack2_1
       rect:
         serializedVersion: 2
-        x: 558
+        x: 424
         y: 0
-        width: 546
-        height: 711
-      alignment: 9
-      pivot: {x: 0.70384175, y: 0.37881032}
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6d4fe503525650438146551bcbd12b6
-      internalID: -1983779375
+      spriteID: b6784f61f43a34444b5dfe188a782c73
+      internalID: -378486740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sideways slash_2
+      name: kate attack2_2
       rect:
         serializedVersion: 2
-        x: 1098
+        x: 848
         y: 0
-        width: 558
-        height: 711
-      alignment: 9
-      pivot: {x: 0.72841173, y: 0.38385993}
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a3c6ed8a1671b14c99be5412d6996f0
-      internalID: 1463021534
+      spriteID: 76d846e3979d8f048abc87d11c9e27ba
+      internalID: 309093131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kate attack2_3
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 0
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fca0ad0ed3c2f548a72042babac4e18
+      internalID: 1986917977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kate attack2_4
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 0
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8731b7c19c39846b50c840bedb87c0
+      internalID: -1620257730
       vertices: []
       indices: 
       edges: []
@@ -204,9 +246,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sideways slash_2: 1463021534
-      sideways slash_0: 498501723
-      sideways slash_1: -1983779375
+      kate attack2_3: 1986917977
+      kate attack2_4: -1620257730
+      kate attack2_1: -378486740
+      kate attack2_2: 309093131
+      kate attack2_0: 1801885334
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

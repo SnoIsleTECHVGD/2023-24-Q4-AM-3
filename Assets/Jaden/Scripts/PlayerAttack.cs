@@ -12,6 +12,7 @@ public class PlayerAttack : MonoBehaviour
     public int maxObjectsHit = 5;
     public Collider2D[] objectsHit;
     public LayerMask selectObjectsToHit;
+    public AnimationClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -71,7 +72,7 @@ public class PlayerAttack : MonoBehaviour
     public IEnumerator swing()
     {
         swinging = true;
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(clip.length);
         swinging = false;
         GetComponent<Animator>().SetBool("IsAttacking", false);
     }
