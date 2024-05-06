@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bea6c79a3889e984ea3ea6c2b4f7fb58
+guid: 2f143190c08bcec4aac80aa4840c2af7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: kate attack2 copy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9073c2834c7a54fb5c95801f088402
+      internalID: -274413402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kate attack2 copy_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6876b5a735ed4c4eba3d4c4a02bbab8
+      internalID: -1113246793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kate attack2 copy_2
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 0
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcfc1afd816c4d4baa55f09955e0eca
+      internalID: 2079598972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kate attack2 copy_3
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 0
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bdfbb53ec67eb4d857b5688596b501
+      internalID: -551663565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kate attack2 copy_4
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 0
+        width: 424.8
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d139b78d1458854592ab0cb8ea0e736
+      internalID: 1944777977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -140,7 +245,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kate attack2 copy_3: -551663565
+      kate attack2 copy_1: -1113246793
+      kate attack2 copy_4: 1944777977
+      kate attack2 copy_2: 2079598972
+      kate attack2 copy_0: -274413402
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

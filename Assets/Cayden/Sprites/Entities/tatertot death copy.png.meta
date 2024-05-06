@@ -1,0 +1,478 @@
+fileFormatVersion: 2
+guid: 312a594eb9dba484db0b6e4513d7e1fa
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tatertot death copy_0
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 0
+        width: 293
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d0f7bbf2dabdc4fa6d6d23a20e94fe
+      internalID: 1009350257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_1
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 0
+        width: 300
+        height: 497
+      alignment: 9
+      pivot: {x: 0.5271228, y: 0.48908532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ed5807fe4c5d6498be5968e69f9989
+      internalID: -508207776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_2
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 0
+        width: 340
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5256147, y: 0.502534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199594303749cdd4280b8e7ecda60cf3
+      internalID: 1217879704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_3
+      rect:
+        serializedVersion: 2
+        x: 2884
+        y: 0
+        width: 359
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9929816f3a10144fab4302d62b67037
+      internalID: -1239324514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_4
+      rect:
+        serializedVersion: 2
+        x: 3746
+        y: 0
+        width: 391
+        height: 439
+      alignment: 9
+      pivot: {x: 0.4968162, y: 0.56235087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69643023632491c46831fc1acbead95a
+      internalID: -1907443190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_5
+      rect:
+        serializedVersion: 2
+        x: 4556
+        y: 0
+        width: 470
+        height: 353
+      alignment: 9
+      pivot: {x: 0.523824, y: 0.73262364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d2ce9d453ab2e4bad158b774df2465
+      internalID: 1326027297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_6
+      rect:
+        serializedVersion: 2
+        x: 5384
+        y: 0
+        width: 535
+        height: 308
+      alignment: 9
+      pivot: {x: 0.5023246, y: 0.75045264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acddf4f3955f7f4469ecd2df0cf685d7
+      internalID: 1745280245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_7
+      rect:
+        serializedVersion: 2
+        x: 6284
+        y: 0
+        width: 522
+        height: 314
+      alignment: 9
+      pivot: {x: 0.49523225, y: 0.84472626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b298c3dea3cc24aa1e41c379221ef4
+      internalID: 1626423338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_8
+      rect:
+        serializedVersion: 2
+        x: 7178
+        y: 0
+        width: 562
+        height: 301
+      alignment: 9
+      pivot: {x: 0.5026951, y: 0.8824556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f840f760c0dd088438fce930d2fb6381
+      internalID: 889868205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_9
+      rect:
+        serializedVersion: 2
+        x: 8066
+        y: 0
+        width: 613
+        height: 281
+      alignment: 9
+      pivot: {x: 0.49752912, y: 0.9150672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f63cafb3a7e00f4885a3f2f83e79b90
+      internalID: 519252303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_10
+      rect:
+        serializedVersion: 2
+        x: 8960
+        y: 0
+        width: 640
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5094665, y: 1.3400443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bc38661219ee04b97d9acebae63fe0
+      internalID: 1849775138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_11
+      rect:
+        serializedVersion: 2
+        x: 9848
+        y: 0
+        width: 665
+        height: 223
+      alignment: 9
+      pivot: {x: 0.5, y: 1.4034014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6934e5d3db31042876bf3968a5e58d
+      internalID: 1314222746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_12
+      rect:
+        serializedVersion: 2
+        x: 10742
+        y: 0
+        width: 685
+        height: 223
+      alignment: 9
+      pivot: {x: 0.48894417, y: 1.4509488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cc827bb54806045be28dcbe85b17d8
+      internalID: -306689824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_13
+      rect:
+        serializedVersion: 2
+        x: 11598
+        y: 0
+        width: 751
+        height: 223
+      alignment: 9
+      pivot: {x: 0.5, y: 1.4101939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98faa82e0631c841a7c9b0a3a0f010a
+      internalID: -1127726788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot death copy_14
+      rect:
+        serializedVersion: 2
+        x: 12479
+        y: 0
+        width: 771
+        height: 223
+      alignment: 9
+      pivot: {x: 0.49999747, y: 1.4420823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3cae0f109b8da4181868110c7964d2
+      internalID: -2084787257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tatertot death copy_2: 1217879704
+      tatertot death copy_13: -1127726788
+      tatertot death copy_3: -1239324514
+      tatertot death copy_5: 1326027297
+      tatertot death copy_7: 1626423338
+      tatertot death copy_6: 1745280245
+      tatertot death copy_10: 1849775138
+      tatertot death copy_4: -1907443190
+      tatertot death copy_14: -2084787257
+      tatertot death copy_9: 519252303
+      tatertot death copy_0: 1009350257
+      tatertot death copy_11: 1314222746
+      tatertot death copy_1: -508207776
+      tatertot death copy_8: 889868205
+      tatertot death copy_12: -306689824
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,7 +129,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tatertot attack front_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 270
+        height: 495
+      alignment: 9
+      pivot: {x: 0.5495947, y: 0.516231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c7851809dc3244ea64817d99239643
+      internalID: -515159676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot attack front_1
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 315
+        height: 486
+      alignment: 9
+      pivot: {x: 0.6232782, y: 0.5358182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9af5ab0e49b1c46ade3dc37c0e1a9a
+      internalID: -1742977200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot attack front_2
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 0
+        width: 342
+        height: 468
+      alignment: 9
+      pivot: {x: 0.6331225, y: 0.52575105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9135aa91892503e4aba3ab5093f24cab
+      internalID: -2052485346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tatertot attack front_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 315
+        height: 495
+      alignment: 9
+      pivot: {x: 0.6062744, y: 0.5081155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ced0424a28e764c99580ce73d42e3f
+      internalID: 937547877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -140,7 +224,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tatertot attack front_1: -1742977200
+      tatertot attack front_3: 937547877
+      tatertot attack front_2: -2052485346
+      tatertot attack front_0: -515159676
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

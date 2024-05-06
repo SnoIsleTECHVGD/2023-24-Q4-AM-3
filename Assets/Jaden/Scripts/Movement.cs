@@ -17,7 +17,7 @@ public class Movement : MonoBehaviour
     {
         if (canMove)
         {
-            if(!(Time.timeScale == 0f))
+            if(Time.timeScale != 0f)
             {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
