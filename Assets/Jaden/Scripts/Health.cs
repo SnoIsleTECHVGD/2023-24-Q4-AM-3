@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEditor.Experimental.GraphView.GraphView;
 public class Health : MonoBehaviour
 {
     public float health;
@@ -35,6 +36,27 @@ public class Health : MonoBehaviour
             slider.value = health;
 
     }
+    public void DealDamage(float damage, GameObject owner)
+    {
+        try
+        {
+            if (gameObject.GetComponent<Movement>().dashing != true)
+            {
+                gameObject.GetComponent<Health>().health -= damage;
+                gameObject.GetComponent<Health>().isImmune = true;
+                gameObject.GetComponent<Animator>().SetBool("IsInvincible", true);
+                GetComponent<Health>().RevokeAfterDelay();
+            } 
+        } catch
+        {
+            gameObject.GetComponent<Health>().health -= damage;
+            gameObject.GetComponent<Health>().isImmune = true;
+            gameObject.GetComponent<Animator>().SetBool("IsInvincible", true);
+            GetComponent<Health>().RevokeAfterDelay();
+        }
+        
+        
+    }
     IEnumerator CheckDie()
     {
         if(health <= 0)
@@ -48,6 +70,7 @@ public class Health : MonoBehaviour
                     Destroy(sliderGameObject);
                 animator.SetBool("IsDead", true);
                 Destroy(weapon);
+                gameObject.GetComponent<Enemy>().enabled = false;
                 yield return new WaitForSeconds(clip.length);
                 Destroy(gameObject);
             }

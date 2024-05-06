@@ -14,11 +14,7 @@ public class DamageOnHit : MonoBehaviour
         {
             if(collision.gameObject.GetComponent<Health>().isImmune == false ) 
             {
-                player = collision.gameObject;
-                collision.gameObject.GetComponent<Health>().health -= damage;
-                collision.gameObject.GetComponent<Health>().isImmune = true;
-                collision.gameObject.GetComponent<Animator>().SetBool("IsInvincible", true);
-                player.GetComponent<Health>().RevokeAfterDelay();
+                collision.gameObject.GetComponent<Health>().DealDamage(damage, gameObject);
             }
         }
     }
