@@ -63,7 +63,12 @@ public class Health : MonoBehaviour
             if (name == "Player") 
             {
                 SceneManager.LoadScene("Ded");
-            } else
+            }
+            else if (name == "Emile")
+            {
+                SceneManager.LoadScene("Win");
+            }
+            else
             {
                 if (hasSlider)
                     Destroy(sliderGameObject);

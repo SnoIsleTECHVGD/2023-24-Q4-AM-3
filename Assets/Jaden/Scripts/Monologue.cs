@@ -10,10 +10,12 @@ public class Monologue : MonoBehaviour
     public GameObject monologue4;
     public GameObject monologue5;
     public GameObject pressE;
+    public GameObject healthBar;
     private IEnumerator OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "Player")
         {
+            healthBar.SetActive(true);
             collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             collision.gameObject.GetComponent<Movement>().enabled = false;
             collision.gameObject.GetComponent<PlayerAttack>().enabled = false;
