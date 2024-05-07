@@ -22,7 +22,14 @@ public class PlayerAttack : MonoBehaviour
     {
         movement = gameObject.GetComponent<Movement>();
         objectsHit = new Collider2D[maxObjectsHit];
-        startingPos = boss.transform.position;
+        try
+        {
+            startingPos = boss.transform.position;
+
+        } catch (Exception )
+        {
+
+        }
         randomPos.AddRange(new List<Vector3>() { startingPos + new Vector3(4, 7), startingPos + new Vector3(-5, 8),
         startingPos + new Vector3(-3, -6), startingPos + new Vector3(4, -6), startingPos});
     }

@@ -36,6 +36,7 @@ public class Monologue : MonoBehaviour
             pressE.SetActive(false);
             collision.gameObject.GetComponent<Movement>().enabled = true;
             collision.gameObject.GetComponent<PlayerAttack>().enabled = true;
+            Destroy(gameObject);
         }
         IEnumerator waitForKeyPress(KeyCode key)
         {
