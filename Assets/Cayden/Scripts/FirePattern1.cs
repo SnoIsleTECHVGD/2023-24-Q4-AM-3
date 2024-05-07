@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -35,7 +36,9 @@ public class FirePattern1 : MonoBehaviour
     private void Fire()
     {
         float distance = Vector3.Distance(target.position, transform.position);
-        if (MathF.Abs(distance) <= sightDistance)
+        Debug.DrawLine(transform.position, target.position);
+        bool hit = Physics2D.Linecast(transform.position, target.position, LayerMask.GetMask("Walls"));
+        if (MathF.Abs(distance) <= sightDistance && !hit)
         {
             GetComponent<Animator>().SetBool("SeesPlayer", true);
             if (stinky < 1)
