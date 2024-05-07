@@ -15,9 +15,14 @@ public class Monologue : MonoBehaviour
     {
         if (collision.name == "Player")
         {
+<<<<<<< HEAD
             healthBar.SetActive(true);
+=======
+            
+>>>>>>> 8d98ad1 (fdsha)
             collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             collision.gameObject.GetComponent<Movement>().enabled = false;
+            collision.gameObject.GetComponent<Animator>().GetComponent<Animator>().GetComponent<Animator>().GetComponent<Animator>().SetBool("IsWalking", false);
             collision.gameObject.GetComponent<PlayerAttack>().enabled = false;
             pressE.SetActive(true);
             monologue1.SetActive(true);
