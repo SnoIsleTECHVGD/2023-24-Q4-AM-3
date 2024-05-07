@@ -15,6 +15,7 @@ public class FirePattern1 : MonoBehaviour
     public GameObject player;
     Transform target;
     public int stinky = 0;
+    public GameObject pooledBullet;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +60,15 @@ public class FirePattern1 : MonoBehaviour
                     GameObject bul = BulletPool.bulletPoolInstance.GetBullet();
                     bul.transform.SetPositionAndRotation(transform.position, transform.rotation);
                     bul.SetActive(true);
-                    bul.GetComponent<Bullet>().SetMoveDirection(bulDir);
+                    if(pooledBullet == gameObject.GetComponent<BulletPool>().pooledBullet)
+                    {
+                        bul.GetComponent<Bullet>().SetMoveDirection(bulDir);
+                    }
+                    else
+                    {
+                        bul.GetComponent<Bullet1>().SetMoveDirection(bulDir);
+                    }
+
 
                     angle += angleStep;
                 }

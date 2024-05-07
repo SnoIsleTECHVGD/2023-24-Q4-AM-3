@@ -7,7 +7,7 @@ public class BulletPool : MonoBehaviour
     public static BulletPool bulletPoolInstance;
 
     [SerializeField]
-    private GameObject pooledBullet;
+    public GameObject pooledBullet;
     private bool notEnoughBulletsInPool = true;
 
     private List<GameObject> bullets;

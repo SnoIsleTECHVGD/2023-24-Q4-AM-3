@@ -10,7 +10,7 @@ public class DamageOnHit : MonoBehaviour
     public AnimationClip clip;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Entity") && collision.gameObject.layer != ignore )
+        if ((collision.gameObject.CompareTag("Entity") || collision.gameObject.CompareTag("Player")) && collision.gameObject.layer != ignore)
         {
             if(collision.gameObject.GetComponent<Health>().isImmune == false ) 
             {

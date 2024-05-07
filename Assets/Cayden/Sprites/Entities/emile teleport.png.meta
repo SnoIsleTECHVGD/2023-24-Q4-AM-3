@@ -129,7 +129,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: emile teleport_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 244.125
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971dd20dd4939e94884e92c753e5124a
+      internalID: -57602699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emile teleport_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 244.125
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d5cabee4a419645b254d663b7a7ac8
+      internalID: -961024959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emile teleport_2
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 0
+        width: 244.125
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3deb840dc70abf144a074e7e93d38ba2
+      internalID: -1690793898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emile teleport_3
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 0
+        width: 244.125
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c2ee9a6e5442c409ff24ae2e76165e
+      internalID: 2147339854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emile teleport_4
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 0
+        width: 244.125
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b585677681ac5409d0d912376b65c9
+      internalID: -399434347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emile teleport_5
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 0
+        width: 244.125
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22eb25e425e1ae747b9879c49cb0ce32
+      internalID: 1476814138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emile teleport_6
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 0
+        width: 244.125
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731b1c9c81c088344b773e5c96c2da4c
+      internalID: 1595911630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emile teleport_7
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 0
+        width: 244.125
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75663da4ca49f174fba9a4de665944fd
+      internalID: -465037518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -140,7 +308,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      emile teleport_2: -1690793898
+      emile teleport_0: -57602699
+      emile teleport_4: -399434347
+      emile teleport_3: 2147339854
+      emile teleport_6: 1595911630
+      emile teleport_1: -961024959
+      emile teleport_5: 1476814138
+      emile teleport_7: -465037518
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

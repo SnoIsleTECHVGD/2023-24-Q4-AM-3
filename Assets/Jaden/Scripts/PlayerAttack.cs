@@ -13,11 +13,18 @@ public class PlayerAttack : MonoBehaviour
     public Collider2D[] objectsHit;
     public LayerMask selectObjectsToHit;
     public AnimationClip clip;
+    public AnimationClip tpClip;
+    [SerializeField] private List<Vector3> randomPos;
+    private Vector3 startingPos;
+    public GameObject boss;
     // Start is called before the first frame update
     void Start()
     {
         movement = gameObject.GetComponent<Movement>();
         objectsHit = new Collider2D[maxObjectsHit];
+        startingPos = boss.transform.position;
+        randomPos.AddRange(new List<Vector3>() { startingPos + new Vector3(4, 7), startingPos + new Vector3(-5, 8),
+        startingPos + new Vector3(-3, -6), startingPos + new Vector3(4, -6), startingPos});
     }
 
     // Update is called once per frame
@@ -56,8 +63,9 @@ public class PlayerAttack : MonoBehaviour
                         if (hit.GetComponent<Health>() != null)
                         { 
                             hit.GetComponent<Health>().health -= damage;
-                            if (hit.GetComponent<Boss>() != null )
-                                hit.GetComponent<Boss>().RandomizePos();
+                            if (hit.GetComponent<Boss>() != null)
+                                boss.GetComponent<Animator>().SetBool("IsTeleporting", true);
+                                Invoke(nameof(RandomizePos), tpClip.length);
                         }
                     } catch (Exception)
                     {
@@ -75,6 +83,12 @@ public class PlayerAttack : MonoBehaviour
         yield return new WaitForSeconds(clip.length);
         swinging = false;
         GetComponent<Animator>().SetBool("IsAttacking", false);
+    }
+    public void RandomizePos()
+    {
+        int g = UnityEngine.Random.Range(0, 5);
+        boss.transform.position = randomPos[g];
+        boss.GetComponent<Animator>().SetBool("IsTeleporting", false);
     }
 }
 
